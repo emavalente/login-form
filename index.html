@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Login && Signup</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img
+          class="navbar__logo"
+          src="./img/logo.jpg"
+          alt="Emanuel Valente logo"
+        />
+        <div class="navbar__branch">
+          <h1>EMANUEL VALENTE</h1>
+          <h2>FRONTEND DEVELOPER</h2>
+        </div>
+
+        <ul class="navbar__items">
+          <li>
+            <a
+              class="navbar__item"
+              href="https://www.linkedin.com/in/emanuel-valente/"
+              >linkedIn</a
+            >
+          </li>
+          <li>
+            <a class="navbar__item" href="https://github.com/emavalente"
+              >Github</a
+            >
+          </li>
+          <li><a class="navbar__item" href="#">Portfolio</a></li>
+        </ul>
+
+        <button class="navbar__login">Login</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <ion-icon name="close-circle-outline" class="close-login"></ion-icon>
+        <section class="login">
+          <form action="" class="form__container">
+            <h2>Login</h2>
+            <div class="form__email-box">
+              <input type="email" placeholder="Enter your email" />
+              <ion-icon name="mail-outline" class="email"></ion-icon>
+            </div>
+            <div class="form__pass-box">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+              />
+              <ion-icon name="lock-closed-outline" class="lock"></ion-icon>
+              <ion-icon
+                name="eye-outline"
+                class="togglePass"
+                id="togglePass"
+                onclick="showAndHide();"
+              ></ion-icon>
+              <!-- <ion-icon name="eye-off-outline" class="eye-off"></ion-icon> -->
+            </div>
+            <div class="form__checkflieds">
+              <div class="checkbox">
+                <input type="checkbox" class="check" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button class="form__submit">Login</button>
+          </form>
+          <div class="account">
+            <p>Don't have an account?</p>
+            <a href="#">Register now</a>
+          </div>
+        </section>
+        <section class="signup"></section>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
